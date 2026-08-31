@@ -73,13 +73,75 @@
     transform: translateY(-2px);
   }
 
-  .th{
-    width: 100px;;
-  }
+  
+.h1h{
+  font-size: 5em;
+  color: rgb(0, 36, 14);
+  display: flex;
+  justify-content:left;
+  margin-top: 1em;
+}
 
 
 
 
+.banner {
+    position: relative;
+
+    width: 100%;
+    max-width: 100%;
+    height: 50em;
+
+    background-image: url("img/tf1.png");
+    background-size: cover;
+    background-position: center;
+
+    margin: auto;
+}
+
+.conteudo {
+    position: absolute;
+
+    /* posição do conteúdo em cima da imagem */
+    top: 90px;
+    left: 65px;
+
+    width: 600px;
+}
+
+
+
+.botoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 37em;
+}
+
+.btn {
+    padding: 16px 30px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.saiba {
+    background-color: #78df42;
+    color: #061b0d;
+}
+
+.dados {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #78df42;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
 
 
 
