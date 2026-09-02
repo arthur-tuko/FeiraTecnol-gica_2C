@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/style.css">
     <link rel="stylesheet" href="cf.css">
-    <script src="bootstrap-5.3.8-dist/css/bootstrap.css"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
     <script src="bootstrap-5.3.8-dist/js/bootstrap.js"></script>
     <title>GreenMind</title>
 </head>
@@ -28,14 +28,26 @@
     </div>
 
     <main>
-    <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Envie um email caso queira</p>
-    <a href="#" class="btn btn-primary">Enviar email</a>
-  </div>
-</div>    
+        <div class="col-lg-5">
+            <div class="card contact-card shadow-sm h-100">
+            <div class="card-header">
+                <h2 class="h5 mb-0">Canais rápidos</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush contact-info">
+                <li class="list-group-item ps-0">
+                    <strong>E-mail:</strong>
+                    <a id="emailLink" href="mailto:projetocasetecmcm@gmail.com" class="ms-1">greenmindmcm@gmail.com</a>
+                </li>
+                </ul>
+                <hr>
+                <p class="mb-2 text-muted small">Projeto realizado por alunos da Etec MCM para a feira tecnológica 2026</p>
+                <div class="d-flex gap-2">
+                <a id="btnMailto" href="#" class="btn btn-outline-primary btn-sm">Enviar e-mail agora</a>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
