@@ -4,18 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="JavaScript.js"></script>
-    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="JavaScript.js" defer></script>
     <title>GreenMind</title>
 </head>
 <body>
-    <header>
-        
-    </header>
-    <main>
 
+    <header class="site-header">
+        <nav class="nav-bar container">
+            <a class="brand" href="#home">GreenMind</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#introducao" class="nav-link">Introdução</a></li>
+                <li><a href="#conceitos" class="nav-link">Conceitos</a></li>
+                <li><a href="#inca" class="nav-link">Relação Inca</a></li>
+                <li><a href="#objetivo" class="nav-link">Objetivo</a></li>
+                <li><a href="#problema" class="nav-link">Problema</a></li>
+                <li><a href="#solucao" class="nav-link">Solução</a></li>
+                <li><a href="#ods" class="nav-link">ODS 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-inner container hero-left">
+                <p class="eyebrow">Tecnologia & Tradição</p>
+                <h1>Tecnologia ancestral. Precisão que cultiva o futuro.</h1>
+                <p class="lead">Inspirado na sabedoria Inca, o sensor GreenMind monitora o solo em tempo real — um guardião automático que mantém a umidade, o pH e os nutrientes em equilíbrio para colheitas mais saudáveis e produtivas.</p>
+                <div class="hero-cta">
+                    <a href="#introducao" class="btn btn-primary">Conheça o produto</a>
+                    <a href="#solucao" class="btn btn-outline">Como funciona</a>
+                </div>
+            </div>
+            <div class="image-placeholder" aria-hidden="true">Espaço para imagem do hero (substitua por sua imagem)</div>
+        </section>
+
+        <section id="introducao" class="section section-bege">
+            <div class="container">
+                <h2>Introdução ao produto</h2>
+                <p>O GreenMind é um sistema composto por sensores de solo e uma plataforma simples que interpreta os dados e age quando necessário — irrigando, sugerindo correções de acidez ou alertando para deficiências de nutrientes. Tudo pensado para ser acessível, de baixo consumo e com instalação intuitiva.</p>
+                <div class="image-placeholder">Insira imagem/diagrama do produto aqui</div>
+            </div>
+        </section>
+
+        <section id="conceitos" class="section section-verde-escuro">
+            <div class="container text-white">
+                <h2>Conceitos principais</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h4>Monitoramento contínuo</h4>
+                        <p>Dados em tempo real permitem decisões precisas — rega no momento certo, correção de pH quando necessário e acompanhamento dos nutrientes.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Automação prática</h4>
+                        <p>Regras simples transformam leitura em ação: sistemas de irrigação podem ser acionados automaticamente, reduzindo trabalho e desperdício.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Design rural-friendly</h4>
+                        <p>Hardware resistente, bateria de longa duração e conectividade otimizada para áreas com pouca infraestrutura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inca" class="section section-bege">
+            <div class="container">
+                <h2>Relação com a Civilização Inca</h2>
+                <p>Os incas entendiam microclimas, patamares e o ciclo da terra. Resgatamos essa ligação entre conhecimento ancestral e inovação: tecnologia que respeita ritmos naturais e potencializa o que a terra pode oferecer.</p>
+                <div class="image-placeholder">Espaço para imagens/ilustrações Inca</div>
+            </div>
+        </section>
+
+        <section id="impact" class="section section-dourado">
+            <div class="container">
+                <h2 class="text-center">Impacto — Objetivo, Problema e Solução</h2>
+                <div class="cards">
+                    <article id="objetivo" class="card">
+                        <h3>Objetivo</h3>
+                        <p>Desenvolver uma solução acessível e automática para aumentar a produção de alimentos, reduzindo desperdício e falhas no manejo do solo.</p>
+                    </article>
+                    <article id="problema" class="card">
+                        <h3>Problema</h3>
+                        <p>A fome ainda afeta milhões de pessoas; muitas plantações não atingem seu potencial por manejo inadequado do solo e falta de monitoramento acessível.</p>
+                    </article>
+                    <article id="solucao" class="card">
+                        <h3>Solução</h3>
+                        <p>Um sensor inteligente que ajusta automaticamente condições essenciais do solo, facilitando uma agricultura mais eficiente e de maior rendimento, com mínima intervenção humana.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ods" class="section section-bege">
+            <div class="container">
+                <h2>Relação com a ODS 2 — Fome Zero</h2>
+                <p>Ao aumentar a eficiência produtiva e diminuir perdas, o GreenMind fortalece a segurança alimentar local. Nossa missão é que tecnologias inteligentes estejam ao alcance de quem cultiva, garantindo mais comida de qualidade para comunidades vulneráveis.</p>
+            </div>
+        </section>
+
+        <footer class="site-footer section-dourado">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>GreenMind</h3>
+                        <p>Unimos conhecimento milenar e sensoriamento moderno para cultivar segurança alimentar. Um produto pensado para quem planta e para quem precisa comer.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Contato: <a href="mailto:contato@greenmind.local">contato@greenmind.local</a></p>
+                    </div>
+                </div>
+                <p class="small mt-3">&copy; 2026 GreenMind — Tema Inca &middot; Espaços para imagens reservados.</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
