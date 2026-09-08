@@ -35,12 +35,52 @@ body{
     justify-content:space-between;
     padding:0.5rem 1rem;
 }
-.brand{
-    font-weight:700;
-    color:var(--verde-escuro);
-    text-decoration:none;
-    font-size:1.25rem;
+.Logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.imgLogo{
+    width: 50px;
+    height: 50px;
+}   
+
+.nav-bar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.textoLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 70px;
+}
+
+.inti{
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: .85;
+    letter-spacing:normal;
+    font-weight: bold;
+    color: var(--verde-escuro);
+}
+
+.agrotech{
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    margin: 0;
+    font-size: .7rem;
+    line-height: .9;
+    letter-spacing: .06rem;
+    font-weight: normal;
+    color: var(--text-dark);
+}
+
 .nav-links{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center}
 .nav-links li{display:inline}
 .nav-link{
