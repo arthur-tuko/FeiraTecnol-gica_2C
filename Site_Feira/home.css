@@ -16,10 +16,31 @@ html {
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--text-dark);
     background: var(--bege);
     line-height: 1.5;
+}
+
+.titulo{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+}
+
+.subtitulo{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.texto{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
 }
 
 .site-header {
@@ -139,15 +160,14 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin: 0 0 0.5rem;
     color: #fff;
     text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-    font-family: Georgia, 'Times New Roman', serif;
 }
 
 .hero .lead {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #efe9df;
     margin-bottom: 1rem;
 }
@@ -180,18 +200,6 @@ body {
     color: #fff;
 }
 
-.image-placeholder {
-    border: 2px dashed rgba(196, 154, 42, 0.45);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.01));
-    color: rgba(0, 0, 0, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    margin-top: 1.5rem;
-    min-height: 220px;
-}
-
 .section {
     padding: 4.5rem 0;
 }
@@ -199,6 +207,176 @@ body {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.process-timeline {
+    --timeline-progress: 0%;
+    margin: 2.5rem 0 1rem;
+    padding: 1.75rem 1.5rem 1.5rem;
+}
+
+.timeline-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-kicker {
+    color: var(--verde-escuro);
+    font-family: "Cinzel", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.timeline-instruction {
+    color: rgba(43, 43, 43, 0.62);
+    font-size: 0.88rem;
+}
+
+.timeline-stages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    gap: 0.5rem;
+}
+
+.timeline-stages::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 49px;
+    height: 2px;
+    background: rgba(196, 154, 42, 0.35);
+    z-index: 0;
+}
+
+.timeline-stage {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.stage-marker {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 0.8rem;
+    padding: 3px;
+    border: 2px solid rgba(196, 154, 42, 0.58);
+    border-radius: 50%;
+    background: var(--bege);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.stage-marker img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.timeline-stage h3 {
+    margin: 0;
+    color: rgba(24, 78, 46, 0.62);
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.timeline-stage.is-active .stage-marker {
+    transform: scale(1.34);
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 6px rgba(196, 154, 42, 0.14), 0 8px 18px rgba(24, 78, 46, 0.16);
+}
+
+.timeline-stage.is-active h3 {
+    color: var(--verde-escuro);
+    font-weight: 700;
+}
+
+.timeline-control {
+    position: relative;
+    margin: 1.4rem 10% 0;
+}
+
+.timeline-control input[type="range"] {
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+    margin: 0;
+    appearance: none;
+    background: transparent;
+    cursor: grab;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-control input[type="range"]:active { cursor: grabbing; }
+
+.timeline-control input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 4px;
+    background: linear-gradient(to right, var(--dourado) var(--timeline-progress), rgba(196, 154, 42, 0.28) var(--timeline-progress));
+}
+
+.timeline-control input[type="range"]::-moz-range-track {
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(196, 154, 42, 0.28);
+}
+
+.timeline-control input[type="range"]::-moz-range-progress { background: var(--dourado); height: 4px; }
+
+.timeline-control input[type="range"]::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+    margin-top: -7px;
+    appearance: none;
+    border: 3px solid var(--bege);
+    border-radius: 50%;
+    background: var(--verde-escuro);
+    box-shadow: 0 0 0 2px var(--dourado);
+}
+
+.timeline-control input[type="range"]::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border: 3px solid var(--bege);
+    border-radius: 50%;
+    background: var(--verde-escuro);
+    box-shadow: 0 0 0 2px var(--dourado);
+}
+
+.timeline-ticks {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.timeline-ticks i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--bege);
+    border: 2px solid rgba(196, 154, 42, 0.7);
+}
+
+.timeline-description {
+    max-width: 620px;
+    min-height: 3rem;
+    margin: 1.4rem auto 0;
+    color: var(--verde-escuro);
+    font-size: 1rem;
+    text-align: center;
 }
 
 .section-bege {
@@ -253,10 +431,16 @@ body {
     font-size: 1rem;
 }
 
+.feature{
+    border-left: 6px solid var(--bege);
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .feature h4 {
@@ -317,5 +501,20 @@ body {
     .card {
         flex: 1 1 100%;
     }
-}
 
+    .process-timeline { padding: 1.5rem 0.5rem 1rem; }
+
+    .timeline-heading { display: block; text-align: center; }
+
+    .timeline-instruction { display: block; margin-top: 0.35rem; }
+
+    .timeline-stages { gap: 0.15rem; }
+
+    .stage-marker { width: 52px; height: 52px; }
+
+    .timeline-stages::before { top: 38px; left: 8%; right: 8%; }
+
+    .timeline-stage h3 { font-size: 0.68rem; }
+
+    .timeline-control { margin-left: 8%; margin-right: 8%; }
+}

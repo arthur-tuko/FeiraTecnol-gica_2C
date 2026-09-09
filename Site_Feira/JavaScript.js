@@ -3,6 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
 	const hero = document.querySelector('.hero');
 	const navLinks = Array.from(document.querySelectorAll('.nav-link'));
 	const sections = navLinks.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+	const timeline = document.querySelector('[data-timeline]');
+	const timelineRange = timeline && timeline.querySelector('input[type="range"]');
+	const timelineStages = timeline ? Array.from(timeline.querySelectorAll('.timeline-stage')) : [];
+	const timelineDescription = timeline && timeline.querySelector('[data-description]');
+	const timelineDescriptions = [
+		'Sensores medem a umidade, a temperatura e os nutrientes presentes no solo.',
+		'As leituras são enviadas para a plataforma, mesmo em áreas com pouca infraestrutura.',
+		'O sistema interpreta os dados e identifica o que a plantação precisa naquele momento.',
+		'Com a necessidade detectada, o GreenMind aciona a irrigação ou sugere a correção de acidez.',
+		'O manejo fica mais preciso: menos desperdício, solo equilibrado e uma plantação mais saudável.'
+	];
+
+	function updateTimeline() {
+		if (!timelineRange) return;
+		const activeStage = Number(timelineRange.value);
+		timeline.style.setProperty('--timeline-progress', `${(activeStage / (timelineDescriptions.length - 1)) * 100}%`);
+		timelineStages.forEach((stage, index) => stage.classList.toggle('is-active', index === activeStage));
+		if (timelineDescription) timelineDescription.textContent = timelineDescriptions[activeStage];
+	}
+
+	if (timelineRange) {
+		timelineRange.addEventListener('input', updateTimeline);
+		timelineStages.forEach(stage => stage.addEventListener('click', () => {
+			timelineRange.value = stage.dataset.stage;
+			updateTimeline();
+		}));
+		updateTimeline();
+	}
 
 	function updateHeader() {
 		if (!hero) return;

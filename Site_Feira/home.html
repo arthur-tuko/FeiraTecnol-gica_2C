@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="home.css">
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="JavaScript.js" defer></script>
-    <title>INTI</title>
+    <title>INTI - home</title>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -40,35 +40,68 @@
         <section id="home" class="hero">
             <div class="hero-inner container hero-left">
                 <p class="eyebrow">Tecnologia & Tradição</p>
-                <h1>Tecnologia ancestral. Precisão que cultiva o futuro.</h1>
-                <p class="lead">Conheça uma nova forma de cuidar da terra, unindo a sabedoria ancestral dos Incas à tecnologia agrícola.</p>
+                <h1 class="titulo">Tecnologia ancestral.</h1>
+                <h1 class="titulo">Precisão que cultiva o futuro.</h1>
+                <p class="lead texto">Conheça uma nova forma de cuidar da terra, unindo a sabedoria ancestral dos Incas à tecnologia agrícola.</p>
                 <button class="btn-hero">Conheça o projeto</button>
             </div>
         </section>
 
         <section id="introducao" class="section section-bege">
             <div class="container">
-                <h2>Introdução ao produto</h2>
-                <p>O GreenMind é um sistema composto por sensores de solo e uma plataforma simples que interpreta os dados e age quando necessário — irrigando, sugerindo correções de acidez ou alertando para deficiências de nutrientes. Tudo pensado para ser acessível, de baixo consumo e com instalação intuitiva.</p>
-                <div class="image-placeholder">Insira imagem/diagrama do produto aqui</div>
+                <h2 class="titulo">Introdução ao projeto</h2>
+                <p class="texto">O AllpaSense é um sistema composto por sensores de solo e uma plataforma simples que interpreta os dados e age quando necessário — irrigando, sugerindo correções de acidez ou alertando para deficiências de nutrientes. Tudo pensado para ser acessível, de baixo consumo e com instalação intuitiva.</p>
+                <div class="process-timeline" data-timeline>
+                    <div class="timeline-heading">
+                        <span class="timeline-kicker">O ciclo AllpaSense</span>
+                        <span class="timeline-instruction">Arraste para acompanhar cada processo</span>
+                    </div>
+                    <div class="timeline-stages" aria-live="polite">
+                        <article class="timeline-stage is-active" data-stage="0">
+                            <div class="stage-marker"><img src="img/captura.png" alt="Sensor instalado no solo"></div>
+                            <h3>Captura</h3>
+                        </article>
+                        <article class="timeline-stage" data-stage="1">
+                            <div class="stage-marker"><img src="img/envio.png" alt="Dados do sensor sendo enviados"></div>
+                            <h3>Envio</h3>
+                        </article>
+                        <article class="timeline-stage" data-stage="2">
+                            <div class="stage-marker"><img src="img/analise.png" alt="Painel analisando as condições do solo"></div>
+                            <h3>Análise</h3>
+                        </article>
+                        <article class="timeline-stage" data-stage="3">
+                            <div class="stage-marker"><img src="img/acao.png" alt="Plantação recebendo os cuidados necessários"></div>
+                            <h3>Ação</h3>
+                        </article>
+                        <article class="timeline-stage" data-stage="4">
+                            <div class="stage-marker"><img src="img/resultado.png" alt="Plantação saudável após o cuidado"></div>
+                            <h3>Resultado</h3>
+                        </article>
+                    </div>
+                    <div class="timeline-control">
+                        <input type="range" min="0" max="4" value="0" step="1" aria-label="Etapa do processo GreenMind">
+                        <div class="timeline-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                    </div>
+                    <p class="timeline-description" data-description>Sensores medem a umidade, a temperatura e os nutrientes presentes no solo.</p>
+                </div>
             </div>
         </section>
 
         <section id="conceitos" class="section section-verde-escuro">
             <div class="container text-white">
-                <h2>Conceitos principais</h2>
+                <h2 class="titulo">Conceitos principais</h2>
                 <div class="feature-grid">
                     <div class="feature">
-                        <h4>Monitoramento contínuo</h4>
-                        <p>Dados em tempo real permitem decisões precisas — rega no momento certo, correção de pH quando necessário e acompanhamento dos nutrientes.</p>
+                        <h4 class="subtitulo">Monitoramento contínuo</h4>
+                        <p class="texto">Dados em tempo real permitem decisões precisas — rega no momento certo, correção de pH quando necessário e acompanhamento dos nutrientes.</p>
                     </div>
                     <div class="feature">
-                        <h4>Automação prática</h4>
-                        <p>Regras simples transformam leitura em ação: sistemas de irrigação podem ser acionados automaticamente, reduzindo trabalho e desperdício.</p>
+                        <h4 class="subtitulo">Automação prática</h4>
+                        <p class="texto">Regras simples transformam leitura em ação: sistemas de irrigação podem ser acionados automaticamente, reduzindo trabalho e desperdício.</p>
                     </div>
                     <div class="feature">
-                        <h4>Design rural-friendly</h4>
-                        <p>Hardware resistente, bateria de longa duração e conectividade otimizada para áreas com pouca infraestrutura.</p>
+                        <h4 class="subtitulo">Design rural-friendly</h4>
+                        <p class="texto">Hardware resistente, bateria de longa duração e conectividade otimizada para áreas com pouca infraestrutura.</p>
                     </div>
                 </div>
             </div>
