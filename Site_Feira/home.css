@@ -7,6 +7,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -31,7 +33,7 @@ body {
 .subtitulo{
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -388,7 +390,7 @@ body {
 }
 
 .section-dourado {
-    background: linear-gradient(90deg, rgba(196, 154, 42, 0.12), rgba(196, 154, 42, 0.06));
+    background: linear-gradient(to bottom, #f5ebd8, #f1b037b8, #f5ebd8);
 }
 
 .section-verde-escuro h2,
@@ -442,6 +444,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-top: 1.5rem;
 }
 
 .feature h4 {
@@ -459,17 +462,6 @@ body {
     overflow: visible;
 }
 
-.section-dourado::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: var(--dourado);
-    margin: 1.5rem auto 0;
-    border-radius: 4px;
-    opacity: 0.9;
-}
-
 .site-footer {
     padding: 2rem 0;
     color: var(--verde-escuro);
@@ -477,6 +469,89 @@ body {
 
 .site-footer a {
     color: var(--verde-escuro);
+}
+
+hr{
+    width: 10%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 1;
+    border: none;
+}
+
+#proposito hr{
+    background-color: var(--verde-escuro);
+}
+
+#conceitos hr{
+    background-color: var(--dourado);
+}
+
+#conceitos h2{
+    text-align: center;
+}
+
+#inca {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: var(--bege);
+}
+
+.inca-border{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.inca-statue{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#inca .container{
+    flex: 1;
+    margin-right: 3rem;
+}
+
+.fraseEfeito{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.fraseEfeito li{
+    padding: 12px 0;
+    padding-left: 35px;
+    position: relative;
+    color: var(--text-dark);
+    transition: var(--transition-smooth);
+}
+
+.fraseEfeito li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--dourado);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fraseEfeito li:hover {
+    transform: translateX(10px);
+    color:  rgb(18, 93, 45);
+}
+
+#ods .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgODS{
+    width: 100%;
+    border-radius: 10px;
 }
 
 @media (max-width: 992px) {

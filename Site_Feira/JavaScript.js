@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'Sensores medem a umidade, a temperatura e os nutrientes presentes no solo.',
 		'As leituras são enviadas para a plataforma, mesmo em áreas com pouca infraestrutura.',
 		'O sistema interpreta os dados e identifica o que a plantação precisa naquele momento.',
-		'Com a necessidade detectada, o GreenMind aciona a irrigação ou sugere a correção de acidez.',
+		'Com a necessidade detectada, o AllpaSense aciona a irrigação ou sugere a correção de acidez.',
 		'O manejo fica mais preciso: menos desperdício, solo equilibrado e uma plantação mais saudável.'
 	];
 
