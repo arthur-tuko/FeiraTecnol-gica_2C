@@ -432,7 +432,8 @@ body {
 }
 
 .feature{
-    border-left: 6px solid var(--bege);
+    border-left: 6px solid var(--dourado);
+    background-color: var(--bege);
     border-radius: 10px;
     padding: 1.25rem;
 }
@@ -450,7 +451,7 @@ body {
 
 .feature p {
     margin: 0;
-    color: #f0eadf;
+    color: var(--text-dark);
 }
 
 .section-dourado {
