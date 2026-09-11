@@ -8,6 +8,7 @@
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="JavaScript.js" defer></script>
     <title>INTI - home</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +42,7 @@
                 <h1 class="titulo">Tecnologia ancestral.</h1>
                 <h1 class="titulo">Precisão que cultiva o futuro.</h1>
                 <p class="lead texto">Conheça uma nova forma de cuidar da terra, unindo a sabedoria ancestral dos Incas à tecnologia agrícola.</p>
-                <button class="btn-hero">Conheça o projeto</button>
+                <a class="btn-hero" href="#introducao">Conheça o projeto</a>
             </div>
         </section>
 
@@ -144,26 +145,42 @@
         <section id="ods" class="section section-bege">
             <div class="container">
                 <h2 class="titulo">Cultivar para Alimentar</h2>
-                <div><img src="img/ods2.png" alt="ODS 2 - Fome Zero" class="imgODS"></div>
-                <div>
-                    <p class="texto">O AllpaSense se relaciona diretamente com a ODS 2 ao buscar contribuir para uma agricultura mais produtiva, eficiente e sustentável. Ao auxiliar no monitoramento das condições do solo, a tecnologia pode reduzir perdas e melhorar o aproveitamento dos recursos utilizados no cultivo.</p>
-                    <p class="texto">Uma produção mais eficiente também pode ajudar a reduzir os custos envolvidos no cultivo. Com menores perdas e maior produtividade, existe potencial para que os alimentos cheguem ao consumidor com preços mais acessíveis, contribuindo para ampliar o acesso à alimentação, especialmente entre comunidades em situação de vulnerabilidade.</p>
+                <hr>
+                <div class="div-ods">
+                    <div class="box-ods"><img src="img/ods2.png" alt="ODS 2 - Fome Zero" class="imgODS"></div>
+                    <div class="texto-ods">
+                        <p class="texto">O AllpaSense se relaciona diretamente com a ODS 2 ao buscar contribuir para uma agricultura mais produtiva, eficiente e sustentável. Ao auxiliar no monitoramento das condições do solo, a tecnologia pode reduzir perdas e melhorar o aproveitamento dos recursos utilizados no cultivo.</p>
+                        <p class="texto">Uma produção mais eficiente também pode ajudar a reduzir os custos envolvidos no cultivo. Com menores perdas e maior produtividade, existe potencial para que os alimentos cheguem ao consumidor com preços mais acessíveis, contribuindo para ampliar o acesso à alimentação, especialmente entre comunidades em situação de vulnerabilidade.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer class="site-footer section-dourado">
+        <footer class="site-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>GreenMind</h3>
-                        <p>Unimos conhecimento milenar e sensoriamento moderno para cultivar segurança alimentar. Um produto pensado para quem planta e para quem precisa comer.</p>
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <h3 class="subtitulo">INTI</h3>
+                        <p class="texto">Site foi desenvolvido para uma feira tecnológica na Etec Profª Maria Cristina Medeiros.</p>
                     </div>
-                    <div class="col-md-4">
-                        <p>Contato: <a href="mailto:contato@greenmind.local">contato@greenmind.local</a></p>
+                    <nav class="footer-navigation" aria-label="Navegação do rodapé">
+                        <h4 class="subtitulo">Navegação</h4>
+                        <ul>
+                            <li><a class="texto" href="#home">Início</a></li>
+                            <li><a class="texto" href="#introducao">Introdução</a></li>
+                            <li><a class="texto" href="#conceitos">Conceitos</a></li>
+                            <li><a class="texto" href="#inca">Relação Inca</a></li>
+                            <li><a class="texto" href="#proposito">Propósito</a></li> 
+                            <li><a class="texto" href="#ods">ODS 2</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-team">
+                        <h4 class="subtitulo">Integrantes</h4>
+                        <p class="texto">Arthur Franco<br>Arthur Gomes<br>Bruno Ferreira<br>Vitor Galucci</p>
                     </div>
                 </div>
-                <p class="small mt-3">&copy; 2026 GreenMind — Tema Inca &middot; Espaços para imagens reservados.</p>
+                <hr>
+                <p class="footer-copyright">&copy; 2026 - INTI - Agrotech | Todos os direitos reservados.</p>
             </div>
         </footer>
     </main>

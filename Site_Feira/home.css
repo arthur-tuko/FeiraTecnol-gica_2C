@@ -393,6 +393,73 @@ body {
     background: linear-gradient(to bottom, #f5ebd8, #f1b037b8, #f5ebd8);
 }
 
+.site-footer {
+    padding: 3rem 0 1.25rem;
+    background: var(--verde-escuro);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 1.5rem; 
+}
+
+.footer-content h3,
+.footer-content h4 {
+    color: white;
+    font-family: "Cinzel", serif;
+    margin-bottom: 0.75rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+}
+
+.footer-content h4 {
+    font-size: 1rem;
+}
+
+.footer-content p {
+    max-width: 340px;
+    margin: 0;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation li + li {
+    margin-top: 0.35rem;
+}
+
+.footer-navigation a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-navigation a:hover {
+    color: var(--dourado);
+    padding-left: 0.25rem;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin: 2rem 0 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
 .section-verde-escuro h2,
 .section-verde-escuro p,
 .section-verde-escuro ul {
@@ -438,6 +505,7 @@ body {
     background-color: var(--bege);
     border-radius: 10px;
     padding: 1.25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .feature-grid {
@@ -464,11 +532,12 @@ body {
 
 .site-footer {
     padding: 2rem 0;
-    color: var(--verde-escuro);
+    background-color: var(--verde-escuro);
+    color: #fff;
 }
 
 .site-footer a {
-    color: var(--verde-escuro);
+    color: white;
 }
 
 hr{
@@ -478,6 +547,15 @@ hr{
     border-radius: 10px;
     opacity: 1;
     border: none;
+}
+
+footer hr{
+    background-color: var(--dourado);
+    
+}
+
+#ods hr{
+    background-color: var(--dourado);
 }
 
 #proposito hr{
@@ -544,14 +622,47 @@ hr{
     color:  rgb(18, 93, 45);
 }
 
-#ods .container{
+#ods h2{
+    text-align: center;
+}
+
+.div-ods{
     display: flex;
     flex-direction: row;
+    margin: 1.75rem auto;
+    width: 70%;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.box-ods{
+    width: 120%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .imgODS{
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.texto-ods{
+    border-left: 6px solid var(--verde-escuro);
+    border-radius: 10px;
+    padding-left: 1.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-ods p{
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 992px) {
