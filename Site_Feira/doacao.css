@@ -1,0 +1,202 @@
+ .apoie-hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(13, 57, 32, 0.92),
+                    rgba(13, 57, 32, 0.68),
+                    rgba(13, 57, 32, 0.35)
+                ),
+                url("img/hero.png");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+        }
+
+        .apoie-hero h1 {
+            font-family: "Cinzel", serif;
+            font-weight: 700;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .apoie-hero p {
+            font-family: "Inter", sans-serif;
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .apoie-section {
+            padding: 90px 0;
+            background: #F5EBD8;
+        }
+
+        .apoie-title {
+            font-family: "Cinzel", serif;
+            color: #184E2E;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .apoie-description {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #555;
+        }
+
+        .apoie-card {
+            height: 100%;
+            background: #FFF9ED;
+            border: 1px solid #E2D4B9;
+            border-radius: 18px;
+            padding: 35px;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(24, 78, 46, 0.08);
+        }
+
+        .apoie-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(24, 78, 46, 0.15);
+        }
+
+        .apoie-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .apoie-card h3 {
+            font-family: "Cinzel", serif;
+            color: #184E2E;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .apoie-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .btn-apoie {
+            display: inline-block;
+            background-color: #184E2E;
+            color: white;
+            padding: 13px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-apoie:hover {
+            background-color: #23683C;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .investidor {
+            background: #184E2E;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .investidor h2 {
+            font-family: "Cinzel", serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .investidor p {
+            color: #eee;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .investidor-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+            padding: 35px;
+            margin-top: 40px;
+        }
+
+        .investidor-box h3 {
+            font-family: "Cinzel", serif;
+            color: #E1C875;
+            margin-bottom: 15px;
+        }
+
+        .btn-investidor {
+            display: inline-block;
+            background: #C49A2A;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .btn-investidor:hover {
+            background: #E1C875;
+            color: #184E2E;
+            transform: translateY(-3px);
+        }
+
+        .apoio-ajuda {
+            background: #FFF9ED;
+            padding: 90px 0;
+        }
+
+        .apoio-ajuda h2 {
+            font-family: "Cinzel", serif;
+            color: #184E2E;
+            font-weight: 700;
+            margin-bottom: 45px;
+        }
+
+        .ajuda-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ajuda-item span {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .ajuda-item h4 {
+            font-family: "Cinzel", serif;
+            color: #184E2E;
+            font-weight: 700;
+        }
+
+        .ajuda-item p {
+            color: #666;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .apoie-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .apoie-hero {
+                text-align: center;
+            }
+
+            .apoie-hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
