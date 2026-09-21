@@ -3,52 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/style.css">
-    <link rel="stylesheet" href="cf.css">
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.js"></script>
-    <title>GreenMind</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contato.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="JavaScript.js" defer></script>
+    <script src="contato.js" defer></script>
+    <title>INTI - contato</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        
-    <div class="header-container">
-    <a href=""><img class="logo" src="img/logo.png" alt=""></a>
-        <nav class="nav">
-        <a href="home.html">Início</a>
-        <a href="cf.html">Funcionamento</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-        <a href="#inicio">Início</a>
-        <a href="#cf">Funcionamento</a>
-        <a href="#servicos">Serviços</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-    </div>
+<body class="pagina-contato">
+
+    <header class="site-heade site-header">
+        <a href="home.html"><img src="img/LogoINTI.png" class="Logo" alt="Logo representando a cultura de plantação Inca"></a>
+        <nav class="nav-bar container">
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Inicio</a></li>
+                <li><a href="home.html#introducao" class="nav-link">Introdução</a></li>
+                <li><a href="home.html#conceitos" class="nav-link">Conceitos</a></li>
+                <li><a href="home.html#inca" class="nav-link">Relação Inca</a></li>
+                <li><a href="home.html#proposito" class="nav-link">Propósito</a></li>
+                <li><a href="home.html#ods" class="nav-link">ODS 2</a></li>
+                <li><a href="contato.html" class="nav-link active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <div class="col-lg-5">
-            <div class="card contact-card shadow-sm h-100">
-            <div class="card-header">
-                <h2 class="h5 mb-0">Canais rápidos</h2>
+        <section class="hero-contato">
+            <div class="container hero-contato-inner">
+                <p class="eyebrow">Fale com a equipe</p>
+                <h1 class="titulo">Sua dúvida também<br>faz o projeto crescer.</h1>
+                <p class="lead texto">Quer entender como o AllpaSense funciona, levar o projeto para a sua escola ou conversar sobre uma parceria? Escreva para a gente — respondemos em até dois dias úteis.</p>
             </div>
-            <div class="card-body">
-                <ul class="list-group list-group-flush contact-info">
-                <li class="list-group-item ps-0">
-                    <strong>E-mail:</strong>
-                    <a id="emailLink" href="mailto:projetocasetecmcm@gmail.com" class="ms-1">greenmindmcm@gmail.com</a>
-                </li>
-                </ul>
+        </section>
+
+        <section id="formulario" class="section section-bege">
+            <div class="container contato-grid">
+
+                <div class="contato-form-box">
+                    <h2 class="titulo">Envie uma mensagem</h2>
+                    <p class="texto form-intro">Preencha os campos abaixo. Os itens marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
+
+                    <form id="form-contato" class="form-contato" novalidate>
+                        <div class="campo">
+                            <label class="subtitulo" for="nome">Nome completo <span class="obrigatorio">*</span></label>
+                            <input type="text" id="nome" name="nome" class="texto" placeholder="Como podemos te chamar?" required>
+                            <span class="erro" data-erro="nome"></span>
+                        </div>
+
+                        <div class="campo-duplo">
+                            <div class="campo">
+                                <label class="subtitulo" for="email">E-mail <span class="obrigatorio">*</span></label>
+                                <input type="email" id="email" name="email" class="texto" placeholder="nome@exemplo.com" required>
+                                <span class="erro" data-erro="email"></span>
+                            </div>
+
+                            <div class="campo">
+                                <label class="subtitulo" for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="texto" placeholder="(11) 90000-0000" maxlength="15">
+                                <span class="erro" data-erro="telefone"></span>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label class="subtitulo" for="assunto">Assunto <span class="obrigatorio">*</span></label>
+                            <select id="assunto" name="assunto" class="texto" required>
+                                <option value="">Escolha um assunto</option>
+                                <option value="duvida">Dúvida sobre o AllpaSense</option>
+                                <option value="visita">Visita ou apresentação na feira</option>
+                                <option value="parceria">Parceria ou apoio ao projeto</option>
+                                <option value="imprensa">Imprensa e divulgação</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                            <span class="erro" data-erro="assunto"></span>
+                        </div>
+
+                        <div class="campo">
+                            <label class="subtitulo" for="mensagem">Mensagem <span class="obrigatorio">*</span></label>
+                            <textarea id="mensagem" name="mensagem" class="texto" rows="6" placeholder="Conte o que você precisa saber sobre o projeto." required></textarea>
+                            <div class="campo-rodape">
+                                <span class="erro" data-erro="mensagem"></span>
+                                <span class="contador" id="contador">0 / 600</span>
+                            </div>
+                        </div>
+
+                        <label class="campo-check texto" for="autorizo">
+                            <input type="checkbox" id="autorizo" name="autorizo" required>
+                            <span>Autorizo o uso dos meus dados para receber a resposta desta mensagem.</span>
+                        </label>
+                        <span class="erro" data-erro="autorizo"></span>
+
+                        <button type="submit" class="btn-hero btn-enviar">Enviar mensagem</button>
+
+                        <p class="retorno" id="retorno" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <aside class="contato-info">
+                    <h2 class="titulo info-titulo">Outros canais</h2>
+
+                    <article class="info-card">
+                        <h3 class="subtitulo">E-mail</h3>
+                        <p class="texto"><a href="mailto:inti.agrotech@etec.sp.gov.br">inti.agrotech@etec.sp.gov.br</a></p>
+                        <p class="texto info-obs">Melhor canal para dúvidas técnicas sobre os sensores.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3 class="subtitulo">Onde nos encontrar</h3>
+                        <p class="texto">Etec Profª Maria Cristina Medeiros<br>Ribeirão Pires - SP</p>
+                        <p class="texto info-obs">O protótipo do AllpaSense fica exposto durante a feira tecnológica.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3 class="subtitulo">Atendimento</h3>
+                        <p class="texto">Segunda a sexta, das 8h às 17h</p>
+                        <p class="texto info-obs">Respondemos as mensagens em até dois dias úteis.</p>
+                    </article>
+
+                    <ul class="fraseEfeito">
+                        <li class="titulo">Quem pergunta cultiva conhecimento.</li>
+                    </ul>
+                </aside>
+
+            </div>
+        </section>
+
+        <section id="duvidas" class="section section-verde-escuro">
+            <div class="container text-white">
+                <h2 class="titulo">Perguntas frequentes</h2>
                 <hr>
-                <p class="mb-2 text-muted small">Projeto realizado por alunos da Etec MCM para a feira tecnológica 2026</p>
-                <div class="d-flex gap-2">
-                <a id="btnMailto" href="#" class="btn btn-outline-primary btn-sm">Enviar e-mail agora</a>
+                <div class="faq">
+                    <details class="faq-item">
+                        <summary class="subtitulo">O AllpaSense já está à venda?</summary>
+                        <p class="texto">Ainda não. O projeto está em fase de protótipo e foi desenvolvido para a feira tecnológica da Etec Profª Maria Cristina Medeiros.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="subtitulo">Quais dados o sensor mede?</summary>
+                        <p class="texto">Umidade, temperatura e nutrientes do solo. Esses dados são enviados para a plataforma, que interpreta as condições e sugere as ações de manejo.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="subtitulo">Posso usar o projeto como referência em um trabalho escolar?</summary>
+                        <p class="texto">Sim. Envie uma mensagem contando o contexto do trabalho e compartilhamos o material de apoio e as fontes que usamos na pesquisa.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="subtitulo">A equipe apresenta o projeto em outras escolas?</summary>
+                        <p class="texto">Podemos apresentar conforme a agenda escolar. Escolha o assunto "Visita ou apresentação na feira" no formulário e conte as datas possíveis.</p>
+                    </details>
                 </div>
             </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <h3 class="subtitulo">INTI</h3>
+                        <p class="texto">Site foi desenvolvido para uma feira tecnológica na Etec Profª Maria Cristina Medeiros.</p>
+                    </div>
+                    <nav class="footer-navigation" aria-label="Navegação do rodapé">
+                        <h4 class="subtitulo">Navegação</h4>
+                        <ul>
+                            <li><a class="texto" href="home.html#home">Início</a></li>
+                            <li><a class="texto" href="home.html#introducao">Introdução</a></li>
+                            <li><a class="texto" href="home.html#conceitos">Conceitos</a></li>
+                            <li><a class="texto" href="home.html#inca">Relação Inca</a></li>
+                            <li><a class="texto" href="home.html#proposito">Propósito</a></li>
+                            <li><a class="texto" href="home.html#ods">ODS 2</a></li>
+                            <li><a class="texto" href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-team">
+                        <h4 class="subtitulo">Integrantes</h4>
+                        <p class="texto">Arthur Franco<br>Arthur Gomes<br>Bruno Ferreira<br>Vitor Galucci</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="footer-copyright"> 2026 - INTI - Agrotech | Todos os direitos reservados.</p>
             </div>
-        </div>
+        </footer>
     </main>
 </body>
 </html>
