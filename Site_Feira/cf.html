@@ -7,6 +7,7 @@
 
     <title>Como funciona | INTI Agro</title>
 
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="cf.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,55 +26,40 @@
     ========================== -->
 
     <header class="site-header">
-
-        <a href="home.html" class="logo-link">
-            <img src="img/LogoINTI.png" class="Logo" alt="Logo INTI">
-        </a>
-
-        <nav class="nav-bar">
-
+        <a href="home.html"><img src="img/LogoINTI.png" class="Logo" alt="Logo representando a cultura de plantação Inca"></a>
+        <nav class="nav-bar container">
             <ul class="nav-links">
-
-                <li>
-                    <a href="home.html" class="nav-link">
-                        Início
-                    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="dropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownHome">
+                        <li><a class="dropdown-item" href="home.html#home">Início</a></li>
+                        <li><a class="dropdown-item" href="home.html#introducao">Introdução</a></li>
+                        <li><a class="dropdown-item" href="home.html#conceitos">Conceitos</a></li>
+                        <li><a class="dropdown-item" href="home.html#inca">Relação Inca</a></li>
+                        <li><a class="dropdown-item" href="home.html#proposito">Propósito</a></li>
+                        <li><a class="dropdown-item" href="home.html#ods">ODS 2</a></li>
+                    </ul>
                 </li>
-
-                <li>
-                    <a href="cf.html" class="nav-link active">
-                        Funcionamento
-                    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-linkFocus dropdown-toggle" href="cf.html" id="dropdownCF" role="button" data-bs-toggle="dropdown" aria-expanded="false">Funcionamento▾</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownCF">
+                        <li><a class="dropdown-item" href="cf.html#sensores">Sensores</a></li>
+                        <li><a class="dropdown-item" href="cf.html">Introdução</a></li>
+                        <li><a class="dropdown-item" href="cf.html#dashboard">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="cf.html#cost">Custo</a></li>
+                    </ul>
                 </li>
-
-                <li>
-                    <a href="home.html#proposito" class="nav-link">
-                        Propósito
-                    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="doacao.html" id="dropdownDoacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">Apoie</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownDoacao">
+                        <li><a class="dropdown-item" href="doacao.html#formas-apoio">Formas de apoio</a></li>
+                        <li><a class="dropdown-item" href="doacao.html#investidor">Investidor</a></li>
+                        <li><a class="dropdown-item" href="doacao.html#apoio-ajuda">Onde o apoio ajuda</a></li>
+                    </ul>
                 </li>
-
-                <li>
-                    <a href="home.html#ods" class="nav-link">
-                        ODS 2
-                    </a>
-                </li>
-
-                 <li>
-                    <a href="doacao.html" class="nav-link">
-                        Apoie
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contato.html" class="nav-link">
-                        Contato
-                    </a>
-                </li>
-
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
             </ul>
-
         </nav>
-
     </header>
 
 
@@ -84,7 +70,11 @@
     <section class="hero">
 
         <div class="hero-overlay"></div>
+    </footer>
 
+        <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
         <div class="hero-inner">
 
             <p class="eyebrow">

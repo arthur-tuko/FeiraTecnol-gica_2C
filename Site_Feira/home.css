@@ -78,6 +78,16 @@ body {
     margin-left: 5em;
 }
 
+.dropdown-menu{
+    background-color: #c49b2ab6;
+    border: none;
+}
+
+.dropdown-item{
+    color: #fff;
+    font-weight: 600;
+}
+
 .nav-links {
     list-style: none;
     margin: 0;
@@ -104,6 +114,25 @@ body {
     font-weight: 600;
     font-size: 1em;
     line-height: 1;
+}
+
+.nav-linkFocus {
+    color: var(--dourado);
+}
+
+.nav-link:focus{
+    color: #c49b2ac8;
+}
+
+.nav-linkFocus::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 8%;
+    bottom: -6px;
+    height: 3px;
+    background: var(--dourado);
+    border-radius: 2px;
 }
 
 .nav-link:hover {

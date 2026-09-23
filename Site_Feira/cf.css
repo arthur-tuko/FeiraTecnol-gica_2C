@@ -15,6 +15,8 @@
    VARIÁVEIS
 ===================================================== */
 
+
+
 :root {
 
     --bege: #F5EBD8;
@@ -118,133 +120,83 @@ a {
    CABEÇALHO
 ===================================================== */
 
-.site-header {
 
-    position: fixed;
-
-    top: 0;
-
-    left: 0;
-
-    right: 0;
-
-    z-index: 999;
-
-    min-height: 75px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 8px 20px;
-
-    background: rgba(13, 57, 32, 0.20);
-
-    backdrop-filter: blur(8px);
-
-    -webkit-backdrop-filter: blur(8px);
-
+.dropdown-menu{
+    background-color: #c49b2ab6;
+    border: none;
 }
 
-
-.logo-link {
-
-    display: flex;
-
-    align-items: center;
-
+.dropdown-item{
+    color: #fff;
+    font-weight: 600;
 }
-
-
-.Logo {
-
-    width: 150px;
-
-    height: auto;
-
-    margin-right: 25px;
-
-}
-
-
-.nav-bar {
-
-    display: flex;
-
-    align-items: center;
-
-}
-
 
 .nav-links {
-
     list-style: none;
-
+    margin: 0;
+    padding: 0;
     display: flex;
-
+    gap: 1rem;
     align-items: center;
-
-    gap: 10px;
-
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 5em;
 }
 
+.nav-links li {
+    display: inline;
+}
 
 .nav-link {
-
-    position: relative;
-
     display: inline-block;
-
-    padding: 8px 10px;
-
+    padding: 0.15rem 0.6rem;
     color: var(--bege);
-
-    font-family: "Cinzel", serif;
-
-    font-size: 0.9rem;
-
+    text-decoration: none;
+    position: relative;
     font-weight: 600;
-
-    transition: 0.25s ease;
-
+    font-size: 1em;
+    line-height: 1;
 }
 
+.nav-linkFocus {
+    color: var(--dourado);
+}
+
+.nav-link:focus{
+    color: #c49b2ac8;
+}
+
+.nav-linkFocus::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 8%;
+    bottom: -6px;
+    height: 3px;
+    background: var(--dourado);
+    border-radius: 2px;
+}
 
 .nav-link:hover {
-
-    color: var(--dourado-claro);
-
+    color: #c49b2ac8;
 }
-
 
 .nav-link.active {
-
     color: var(--dourado);
-
 }
-
 
 .nav-link.active::after {
-
     content: "";
-
     position: absolute;
-
-    left: 10%;
-
-    right: 10%;
-
-    bottom: 0;
-
+    left: 8%;
+    right: 8%;
+    bottom: -6px;
     height: 3px;
-
     background: var(--dourado);
-
-    border-radius: 5px;
-
+    border-radius: 2px;
 }
+
 
 
 /* =====================================================
