@@ -119,7 +119,38 @@ a {
 /* =====================================================
    CABEÇALHO
 ===================================================== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background 0.28s ease, box-shadow 0.28s ease;
+    background: rgba(245, 235, 216, 0.06);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
 
+.site-header.scrolled {
+    background: var(--verde-escuro);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+}
+
+.Logo {
+    width: 150px;
+    margin-left: 5em;
+}
 
 .dropdown-menu{
     background-color: #c49b2ab6;
@@ -178,6 +209,21 @@ a {
     border-radius: 2px;
 }
 
+.nav-linkFocusCTT{
+    color: var(--dourado);
+}
+
+.nav-linkFocusCTT::after{
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: -6px;
+    height: 3px;
+    background: var(--dourado);
+    border-radius: 2px;
+}
+
 .nav-link:hover {
     color: #c49b2ac8;
 }
@@ -196,8 +242,6 @@ a {
     background: var(--dourado);
     border-radius: 2px;
 }
-
-
 
 /* =====================================================
    BANNER

@@ -468,3 +468,18 @@
     background: var(--dourado);
     border-radius: 2px;
 }
+
+.nav-linkFocusCTT{
+    color: var(--dourado);
+}
+
+.nav-linkFocusCTT::after{
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: -6px;
+    height: 3px;
+    background: var(--dourado);
+    border-radius: 2px;
+}
