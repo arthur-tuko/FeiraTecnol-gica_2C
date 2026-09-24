@@ -1,4 +1,8 @@
- .apoie-hero {
+:root{
+    --transition-smooth: all 0.3s ease-in-out;
+}
+
+.apoie-hero {
             min-height: 75vh;
             display: flex;
             align-items: center;
@@ -276,4 +280,102 @@
     height: 3px;
     background: var(--dourado);
     border-radius: 2px;
+}
+
+.site-footer {
+    padding: 3rem 0 1.25rem;
+    background: var(--verde-escuro);
+    color: #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 1.5rem; 
+}
+
+.footer-content h3 {
+    color: var(--dourado);
+    font-family: "Cinzel", serif;
+    margin-bottom: 0.75rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+}
+
+.footer-content h4 {
+    font-size: 1rem;
+}
+
+.footer-content p {
+    max-width: 340px;
+    margin: 0;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation li + li {
+    margin-top: 0.35rem;
+}
+
+.footer-navigation a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-navigation a:hover {
+    color: var(--dourado);
+    padding-left: 0.25rem;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin: 2rem 0 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.footer-logo {
+    width: 10em;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.texto{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+hr{
+    width: 10%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 1;
+    border: none;
+}
+
+footer hr{
+    background-color: var(--dourado);
+    
+}
+
+.site-footer a {
+    color: white;
 }

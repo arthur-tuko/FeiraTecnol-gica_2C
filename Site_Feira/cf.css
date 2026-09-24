@@ -18,6 +18,7 @@
 
 
 :root {
+    --transition-smooth: all 0.3s ease-in-out;
 
     --bege: #F5EBD8;
 
@@ -1183,378 +1184,99 @@ h2 {
 /* =====================================================
    FOOTER
 ===================================================== */
-
-.footer {
-
-    background: #0A2918;
-
-    color: #FFFFFF;
-
-    padding-top: 60px;
-
+.site-footer {
+    padding: 3rem 0 1.25rem;
+    background: var(--verde-escuro);
+    color: #fff;
 }
 
-
-.footer-inner {
-
+.footer-content {
     display: grid;
-
-    grid-template-columns:
-        1.5fr
-        1fr
-        1fr;
-
-    gap: 50px;
-
-    padding-bottom: 50px;
-
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 1.5rem; 
 }
 
+.footer-content h3 {
+    color: var(--dourado);
+    font-family: "Cinzel", serif;
+    margin-bottom: 0.75rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+}
+
+.footer-content h4 {
+    font-size: 1rem;
+}
+
+.footer-content p {
+    max-width: 340px;
+    margin: 0;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation li + li {
+    margin-top: 0.35rem;
+}
+
+.footer-navigation a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-navigation a:hover {
+    color: var(--dourado);
+    padding-left: 0.25rem;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin: 2rem 0 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
 
 .footer-logo {
-
-    width: 130px;
-
-    margin-bottom: 15px;
-
+    width: 10em;
+    margin-bottom: 1rem;
 }
 
-
-.footer p {
-
-    color: #B8C8BC;
-
-    font-size: 0.85rem;
-
-    margin-bottom: 5px;
-
-}
-
-
-.footer h4 {
-
-    margin-bottom: 15px;
-
-    color: var(--dourado);
-
-    font-family: "Cinzel", serif;
-
-}
-
-
-.footer-bottom {
-
-    padding: 20px;
-
-    text-align: center;
-
-    border-top: 1px solid rgba(255,255,255,0.08);
-
-}
-
-
-.footer-bottom p {
-
-    margin: 0;
-
-    font-size: 0.75rem;
-
-}
-
-
-/* =====================================================
-   RESPONSIVIDADE
-===================================================== */
-
-
-/* TABLET */
-
-@media (max-width: 1000px) {
-
-
-    .site-header {
-
-        justify-content: center;
-
-    }
-
-
-    .Logo {
-
-        width: 120px;
-
-        margin-right: 10px;
-
-    }
-
-
-    .nav-links {
-
-        gap: 2px;
-
-    }
-
-
-    .nav-link {
-
-        font-size: 0.75rem;
-
-        padding: 7px 6px;
-
-    }
-
-
-    .flow {
-
-        grid-template-columns:
-            1fr
-            1fr;
-
-        gap: 20px;
-
-    }
-
-
-    .flow-line {
-
-        display: none;
-
-    }
-
-
-    .sensor-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-    }
-
-
-    .dashboard-grid {
-
+@media (max-width: 768px) {
+    .footer-content {
         grid-template-columns: 1fr;
-
-        gap: 45px;
-
+        gap: 1.5rem;
     }
-
-
-    .price-box {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-    }
-
-
-    .team-button {
-
-        align-self: flex-start;
-
-    }
-
 }
 
-
-/* CELULAR */
-
-@media (max-width: 650px) {
-
-
-    .section {
-
-        padding: 75px 0;
-
-    }
-
-
-    /* HEADER */
-
-    .site-header {
-
-        min-height: auto;
-
-        padding: 8px 5px;
-
-    }
-
-
-    .Logo {
-
-        width: 90px;
-
-        margin-right: 3px;
-
-    }
-
-
-    .nav-links {
-
-        gap: 0;
-
-    }
-
-
-    .nav-link {
-
-        padding: 5px 4px;
-
-        font-size: 0.58rem;
-
-    }
-
-
-    .nav-link.active::after {
-
-        bottom: -2px;
-
-        height: 2px;
-
-    }
-
-
-    /* HERO */
-
-    .hero {
-
-        min-height: 720px;
-
-        height: auto;
-
-        padding:
-            150px 0
-            90px;
-
-        background-position: center;
-
-    }
-
-
-    .hero-inner {
-
-        width: 90%;
-
-        padding: 0;
-
-    }
-
-
-    .hero h1 {
-
-        font-size: 2.45rem;
-
-    }
-
-
-    .hero-text {
-
-        font-size: 0.92rem;
-
-    }
-
-
-    /* FLOW */
-
-    .flow {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    /* SENSORES */
-
-    .sensor-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .sensor-card p {
-
-        min-height: auto;
-
-    }
-
-
-    /* DASHBOARD */
-
-    .dashboard-panel {
-
-        padding: 20px;
-
-    }
-
-
-    .dash-row {
-
-        grid-template-columns:
-            1.2fr
-            .8fr
-            .8fr;
-
-        font-size: 0.75rem;
-
-    }
-
-
-    /* PREÇO */
-
-    .price-box {
-
-        padding: 28px 22px;
-
-        text-align: center;
-
-        align-items: center;
-
-    }
-
-
-    .price-main strong {
-
-        font-size: 2.15rem;
-
-    }
-
-
-    .price-main p {
-
-        font-size: 0.82rem;
-
-    }
-
-
-    .team-button {
-
-        width: 100%;
-
-        min-width: 0;
-
-    }
-
-
-    /* FOOTER */
-
-    .footer-inner {
-
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-
-        text-align: center;
-
-    }
-
-
-    .footer-logo {
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-    }
-
+.texto{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+hr{
+    width: 10%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 1;
+    border: none;
+}
+
+footer hr{
+    background-color: var(--dourado); 
+}
+
+.site-footer a {
+    color: white;
 }

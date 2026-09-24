@@ -44,8 +44,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-linkFocus dropdown-toggle" href="cf.html" id="dropdownCF" role="button" data-bs-toggle="dropdown" aria-expanded="false">Funcionamento▾</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownCF">
+                        <li><a class="dropdown-item" href="cf.html#intro">Introdução</a></li>
                         <li><a class="dropdown-item" href="cf.html#sensores">Sensores</a></li>
-                        <li><a class="dropdown-item" href="cf.html">Introdução</a></li>
                         <li><a class="dropdown-item" href="cf.html#dashboard">Dashboard</a></li>
                         <li><a class="dropdown-item" href="cf.html#cost">Custo</a></li>
                     </ul>
@@ -55,7 +55,7 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownDoacao">
                         <li><a class="dropdown-item" href="doacao.html#formas-apoio">Formas de apoio</a></li>
                         <li><a class="dropdown-item" href="doacao.html#investidor">Investidor</a></li>
-                        <li><a class="dropdown-item" href="doacao.html#apoio-ajuda">Onde o apoio ajuda</a></li>
+                        <li><a class="dropdown-item" href="doacao.html#apoio">Onde o apoio ajuda</a></li>
                     </ul>
                 </li>
                 <li><a href="contato.html" class="nav-link">Contato</a></li>
@@ -109,7 +109,7 @@
              INTRODUÇÃO
         ========================== -->
 
-        <section class="intro section">
+        <section id="intro" class="intro section">
 
             <div class="container">
 
@@ -551,7 +551,7 @@
              DASHBOARD
         ========================== -->
 
-        <section class="dashboard section">
+        <section id="dashboard" class="dashboard section">
 
             <div class="container dashboard-grid">
 
@@ -699,7 +699,7 @@
              CUSTO
         ========================== -->
 
-        <section class="cost section">
+        <section id="cost" class="cost section">
 
             <div class="container">
 
@@ -804,77 +804,33 @@
          RODAPÉ
     ========================== -->
 
-    <footer class="footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <img
-                    src="img/LogoINTI.png"
-                    class="footer-logo"
-                    alt="Logo INTI">
-
-                <p>
-                    INTI Agro · AllpaSense
-                </p>
-
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <img class="footer-logo" src="img/LogoINTI.png" alt="Logo INTI">
+                        <p class="texto">Site foi desenvolvido para uma feira tecnológica na Etec Profª Maria Cristina Medeiros.</p>
+                    </div>
+                    <nav class="footer-navigation" aria-label="Navegação do rodapé">
+                        <h3 class="subtitulo">Navegação</h3>
+                        <ul>
+                            <li><a class="texto" href="#home">Início</a></li>
+                            <li><a class="texto" href="#introducao">Introdução</a></li>
+                            <li><a class="texto" href="#conceitos">Conceitos</a></li>
+                            <li><a class="texto" href="#inca">Relação Inca</a></li>
+                            <li><a class="texto" href="#proposito">Propósito</a></li> 
+                            <li><a class="texto" href="#ods">ODS 2</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-team">
+                        <h3 class="subtitulo">Integrantes</h3>
+                        <p class="texto">Arthur Franco<br>Arthur Gomes<br>Bruno Ferreira<br>Vitor Galucci</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="footer-copyright">&copy; 2026 - INTI - Agrotech | Todos os direitos reservados.</p>
             </div>
-
-
-            <div>
-
-                <h4>
-                    Projeto
-                </h4>
-
-                <p>
-                    Feira Tecnológica
-                </p>
-
-                <p>
-                    Etec Profª Maria Cristina Medeiros
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h4>
-                    Equipe
-                </h4>
-
-                <p>
-                    Arthur Franco
-                </p>
-
-                <p>
-                    Arthur Gomes
-                </p>
-
-                <p>
-                    Bruno Ferreira
-                </p>
-
-                <p>
-                    Vitor Galucci
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 INTI Agro · AllpaSense
-            </p>
-
-        </div>
-
-    </footer>
+        </footer>
 
 
 </body>
