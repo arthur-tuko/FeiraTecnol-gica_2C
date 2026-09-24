@@ -8,11 +8,12 @@
     <title>Como funciona | INTI Agro</title>
 
     <link rel="stylesheet" href="cf.css">
+    <link rel="stylesheet" href="home.css">
 
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 </head>
 
-<body>
+<body id="inicio">
 
     <!-- =========================
          CABEÇALHO
@@ -24,48 +25,64 @@
             <img src="img/LogoINTI.png" class="Logo" alt="Logo INTI">
         </a>
 
-        <nav class="nav-bar">
+        <!-- =========================
+             NAVBAR
+        ========================== -->
 
+        <nav class="nav-bar container">
             <ul class="nav-links">
 
                 <li>
-                    <a href="home.html" class="nav-link texto">
-                        Início
-                    </a>
+                    <a href="#inicio" class="nav-link">Início</a>
                 </li>
 
                 <li>
-                    <a href="cf.html" class="nav-link texto active">
-                        Funcionamento
-                    </a>
+                    <a href="#funcionamento" class="nav-link">Funcionamento</a>
                 </li>
 
                 <li>
-                    <a href="home.html#proposito" class="nav-link texto">
-                        Propósito
-                    </a>
+                    <a href="#sensores" class="nav-link">Sensores</a>
                 </li>
 
                 <li>
-                    <a href="home.html#ods" class="nav-link texto">
-                        ODS 2
-                    </a>
+                    <a href="#monitoramento" class="nav-link">Monitoramento</a>
                 </li>
 
                 <li>
-                    <a href="doacao.html" class="nav-link texto">
-                        Apoie
-                    </a>
+                    <a href="#preco" class="nav-link">Preço</a>
                 </li>
 
-                <li>
-                    <a href="contato.html" class="nav-link texto">
-                        Contato
+                <!-- DROPDOWN ORIGINAL -->
+
+                <li class="nav-dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Mais
                     </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="home.html">Início</a>
+                        </li>
+
+                        <li>
+                            <a href="doacao.html">Doação</a>
+                        </li>
+
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+
+                        <li>
+                            <a href="cf.html">Como funciona</a>
+                        </li>
+
+                    </ul>
+
                 </li>
 
             </ul>
-
         </nav>
 
     </header>
@@ -108,10 +125,10 @@
     <main>
 
         <!-- =========================
-             INTRODUÇÃO
+             FUNCIONAMENTO
         ========================== -->
 
-        <section class="intro section">
+        <section class="intro section" id="funcionamento">
 
             <div class="container">
 
@@ -132,9 +149,11 @@
                 </p>
 
 
-                <!-- FLUXO -->
+                <!-- =========================
+                     FLUXO
+                ========================== -->
 
-                <div class="flow">
+                <div class="flow" id="etapas">
 
                     <div class="flow-card">
 
@@ -270,9 +289,9 @@
 
                 <div class="sensor-grid">
 
-                    <!-- UMIDADE -->
+                    <!-- SENSOR DE UMIDADE -->
 
-                    <article class="sensor-card">
+                    <article class="sensor-card" id="sensor-umidade">
 
                         <div class="sensor-top">
 
@@ -315,9 +334,9 @@
                     </article>
 
 
-                    <!-- TEMPERATURA -->
+                    <!-- SENSOR DE TEMPERATURA -->
 
-                    <article class="sensor-card">
+                    <article class="sensor-card" id="sensor-temperatura">
 
                         <div class="sensor-top">
 
@@ -360,9 +379,9 @@
                     </article>
 
 
-                    <!-- PH -->
+                    <!-- SENSOR DE PH -->
 
-                    <article class="sensor-card">
+                    <article class="sensor-card" id="sensor-ph">
 
                         <div class="sensor-top">
 
@@ -405,9 +424,9 @@
                     </article>
 
 
-                    <!-- CE -->
+                    <!-- CONDUTIVIDADE ELÉTRICA -->
 
-                    <article class="sensor-card">
+                    <article class="sensor-card" id="sensor-ce">
 
                         <div class="sensor-top">
 
@@ -452,7 +471,7 @@
 
                     <!-- NPK -->
 
-                    <article class="sensor-card highlight">
+                    <article class="sensor-card highlight" id="sensor-npk">
 
                         <div class="sensor-top">
 
@@ -497,7 +516,7 @@
 
                     <!-- ESP32 -->
 
-                    <article class="sensor-card">
+                    <article class="sensor-card" id="sensor-esp32">
 
                         <div class="sensor-top">
 
@@ -547,10 +566,10 @@
 
 
         <!-- =========================
-             DASHBOARD
+             MONITORAMENTO
         ========================== -->
 
-        <section class="dashboard section">
+        <section class="dashboard section" id="monitoramento">
 
             <div class="container dashboard-grid">
 
@@ -581,7 +600,7 @@
                 </div>
 
 
-                <div class="dashboard-panel">
+                <div class="dashboard-panel" id="dados-solo">
 
                     <div class="dashboard-header">
 
@@ -693,10 +712,10 @@
 
 
         <!-- =========================
-             CUSTO
+             PREÇO / CUSTO
         ========================== -->
 
-        <section class="cost section">
+        <section class="cost section" id="preco">
 
             <div class="container">
 
@@ -759,7 +778,7 @@
 
 
         <!-- =========================
-             CTA
+             CTA FINAL
         ========================== -->
 
         <section class="final-cta">
@@ -804,70 +823,3 @@
                 <img
                     src="img/LogoINTI.png"
                     class="footer-logo"
-                    alt="Logo INTI">
-
-                <p class="texto">
-                    INTI Agro · AllpaSense
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h4 class="titulo">
-                    Projeto
-                </h4>
-
-                <p class="texto">
-                    Feira Tecnológica
-                </p>
-
-                <p class="texto">
-                    Etec Profª Maria Cristina Medeiros
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h4 class="titulo">
-                    Equipe
-                </h4>
-
-                <p class="texto">
-                    Arthur Franco
-                </p>
-
-                <p class="texto">
-                    Arthur Gomes
-                </p>
-
-                <p class="texto">
-                    Bruno Ferreira
-                </p>
-
-                <p class="texto">
-                    Vitor Galucci
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p class="texto">
-                © 2026 INTI Agro · AllpaSense
-            </p>
-
-        </div>
-
-    </footer>
-
-
-</body>
-
-</html>
